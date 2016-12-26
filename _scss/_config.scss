@@ -1,0 +1,24 @@
+
+// Base variables
+$base-font-family: 'Assistant', sans-serif;
+$base-font-size:   1em;
+$base-font-weight: 300;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.65;
+
+//colors
+$text-color: #323232;
+$background-color: #fafafa;
+$warm-color: #ee5143;
+$cool-color: #3f9e99;
+$gray-color: #aeaeae;
+
+// Spacing
+$spacing-unit: 2em;
+
+// Width of the content area
+$extra-extra-large-screen: 90em;
+$extra-large-screen: 68em;
+$large-screen: 50em;
+$medium-screen: 48em;
+$small-screen: 30em;

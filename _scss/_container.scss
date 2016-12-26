@@ -1,0 +1,9 @@
+.container {
+    padding: 0 $spacing-unit 0 $spacing-unit;
+    display: block;
+    margin: 0 auto;
+
+    &--MEDIUM {
+        max-width: $medium-screen;
+    }
+}
