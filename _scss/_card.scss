@@ -1,0 +1,21 @@
+.card {
+    flex: 1;
+    border: 1px solid $gray-color;
+    padding: $spacing-unit / 2;
+    border-radius: 3px;
+    margin: $spacing-unit / 4;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &--row {
+        display: flex;
+        margin-bottom: $spacing-unit;
+    }
+
+}

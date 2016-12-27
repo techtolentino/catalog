@@ -3,7 +3,7 @@ layout: default
 title: Slack Catalog
 description: Search for internal, customized integrations or bots that can be integrated with Slack.
 ---
-<div class="band band--MEDIUM band--DARK">
+<div class="band band--MEDIUM bg--dark">
     <div class="container container--SMALL">
         <div class="align--CENTER text--WHITE">
             <h1>{{page.title}}</h1>
@@ -19,20 +19,44 @@ description: Search for internal, customized integrations or bots that can be in
 <div class="band">
     <div class="container container--section container--MEDIUM">
         <h3 class="text--WARM">Bots</h3>
-        {% for collection in site.applications %}
-            {{collection.title}}
-        {% endfor %}
+        <div class="card--row">
+            {% for collection in site.applications %}
+                {% if collection.type == 'bot' %}
+                    <div class="card">
+                        {{collection.title}}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
 </div>
 
 <div class="band">
     <div class="container container--section container--MEDIUM">
         <h3 class="text--COOL">Integrations</h3>
+        <div class="card--row">
+            {% for collection in site.applications %}
+                {% if collection.type == 'integration' %}
+                    <div class="card">
+                        {{collection.title}}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
 </div>
 
 <div class="band">
     <div class="container container--section container--MEDIUM">
         <h3 class="text--DARK">Apps</h3>
+        <div class="card--row">
+            {% for collection in site.applications %}
+                {% if collection.type == 'app' %}
+                    <div class="card">
+                        {{collection.title}}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
 </div>
