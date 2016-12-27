@@ -398,7 +398,9 @@ body {
   border: 1px solid #aeaeae;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden; }
 
 .form--input {
   padding-top: 0.25em;
@@ -408,6 +410,14 @@ body {
   background: #F5F5F6;
   border: none;
   width: 100%; }
+  .form--input::-webkit-input-placeholder {
+    color: #555555; }
+  .form--input::-moz-placeholder {
+    color: #555555; }
+  .form--input:-ms-input-placeholder {
+    color: #555555; }
+  .form--input::placeholder {
+    color: #555555; }
 
 .form--submit {
   padding-top: 0.25em;

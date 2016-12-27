@@ -19,6 +19,9 @@ description: Search for internal, customized integrations or bots that can be in
 <div class="band">
     <div class="container container--section container--MEDIUM">
         <h3 class="text--WARM">Bots</h3>
+        {% for collection in site.applications %}
+            {{collection.title}}
+        {% endfor %}
     </div>
 </div>
 
