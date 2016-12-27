@@ -1,5 +1,5 @@
 ---
 title: "Sample Integration"
-layout: default
+layout: app
 type: integration
 ---
