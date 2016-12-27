@@ -1,5 +1,5 @@
 ---
 title: "Sample Bot"
-layout: default
+layout: app
 type: bot
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Test Integration"
-layout: default
+layout: app
 type: integration
 ---

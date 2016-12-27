@@ -23,7 +23,9 @@ description: Search for internal, customized integrations or bots that can be in
             {% for collection in site.applications %}
                 {% if collection.type == 'bot' %}
                     <div class="card">
-                        {{collection.title}}
+                        <a href="{{collection.url}}">
+                            {{collection.title}}
+                        </a>
                     </div>
                 {% endif %}
             {% endfor %}
@@ -38,7 +40,9 @@ description: Search for internal, customized integrations or bots that can be in
             {% for collection in site.applications %}
                 {% if collection.type == 'integration' %}
                     <div class="card">
-                        {{collection.title}}
+                        <a href="{{collection.url}}">
+                            {{collection.title}}
+                        </a>
                     </div>
                 {% endif %}
             {% endfor %}
@@ -53,7 +57,9 @@ description: Search for internal, customized integrations or bots that can be in
             {% for collection in site.applications %}
                 {% if collection.type == 'app' %}
                     <div class="card">
-                        {{collection.title}}
+                        <a href="{{collection.url}}">
+                            {{collection.title}}
+                        </a>
                     </div>
                 {% endif %}
             {% endfor %}

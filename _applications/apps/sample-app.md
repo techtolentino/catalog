@@ -1,5 +1,5 @@
 ---
 title: "Sample App"
-layout: default
+layout: app
 type: app
 ---
