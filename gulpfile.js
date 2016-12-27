@@ -27,7 +27,7 @@ gulp.task('sass', function () {
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 2 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest('_site/src/css'))
+        .pipe(gulp.dest('build/src/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('src/css'));
 });
@@ -35,14 +35,14 @@ gulp.task('sass', function () {
 /** Wait for jekyll-build, then launch the Server */
 gulp.task('serve', ['sass', 'jekyll-build'], function() {
     browserSync.init({
-        server: "_site/"
+        server: "build/"
     });
 });
 
-/** Watch all files for changes, except the _site and other unneccessary folders */
+/** Watch all files for changes, except the build and other unneccessary folders */
 gulp.task('watch', function () {
     gulp.watch('_scss/*.*', ['sass']);
-    gulp.watch(['**/*.*', '!_site/**/*', '!node_modules/**/*','!.sass-cache/**/*' ], ['jekyll-rebuild']);
+    gulp.watch(['**/*.*', '!build/**/*', '!node_modules/**/*','!.sass-cache/**/*' ], ['jekyll-rebuild']);
 });
 
 /**Default task, running just `gulp` will compile the jekyll site, launch BrowserSync & watch files. */

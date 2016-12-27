@@ -12,7 +12,7 @@ collections:
   applications:
     output: true
 
-
+destination: build
 
 exclude:
   - Gemfile

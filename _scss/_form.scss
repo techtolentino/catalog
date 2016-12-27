@@ -1,0 +1,28 @@
+@mixin form-padding {
+    padding-top: $spacing-unit / 8;
+    padding-bottom: $spacing-unit / 8;
+    padding-left: $spacing-unit / 4;
+    padding-right: $spacing-unit / 4;
+}
+
+.form {
+    &--search {
+        border: 1px solid $gray-color;
+        display: flex;
+    }
+
+    &--input {
+        @include form-padding;
+        background: $background-color;
+        border: none;
+        width: 100%;
+    }
+
+    &--submit {
+        @include form-padding;
+        background: $background-color;
+        outline: none;
+        border: none;
+        color: $background-color;
+    }
+}
