@@ -3,6 +3,14 @@
     display: block;
     margin: 0 auto;
 
+    &--section {
+        border-bottom: 1px dotted $gray-color;
+    }
+
+    &--SMALL {
+        max-width: $small-screen;
+    }
+
     &--MEDIUM {
         max-width: $medium-screen;
     }

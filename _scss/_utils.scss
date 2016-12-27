@@ -1,0 +1,22 @@
+.text {
+    &--WHITE {
+        color: $background-color;
+    }
+
+    &--WARM {
+        color: $warm-color;
+    }
+
+    &--COOL {
+        color: $cool-color;
+    }
+
+    &--DARK {
+        color: $dark-color;
+    }
+
+    &--GRAY {
+        color: $gray-color;
+    }
+
+}
