@@ -455,7 +455,8 @@ body {
 .icon {
   height: 2em;
   width: 2em;
-  vertical-align: middle; }
+  vertical-align: middle;
+  padding-right: 0.5em; }
   .icon--MEDIUM {
     height: 4em;
     width: 4em;
