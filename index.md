@@ -49,20 +49,3 @@ description: Search for internal, customized integrations or bots that can be in
         </div>
     </div>
 </div>
-
-<div class="band">
-    <div class="container container--section container--MEDIUM">
-        <h3 class="text--DARK">Apps</h3>
-        <div class="card--row">
-            {% for collection in site.applications %}
-                {% if collection.type == 'app' %}
-                    <div class="card">
-                        <a href="{{collection.url}}">
-                            {{collection.title}}
-                        </a>
-                    </div>
-                {% endif %}
-            {% endfor %}
-        </div>
-    </div>
-</div>

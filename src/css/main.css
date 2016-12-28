@@ -79,7 +79,8 @@ a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
-  /* 2 */ }
+  /* 2 */
+  text-decoration: none; }
 
 /**
  * Remove the outline on focused links when they are also active or hovered
@@ -379,8 +380,13 @@ body {
   .band--MEDIUM {
     padding-top: 4em;
     padding-bottom: 4em; }
+  .band--LARGE {
+    padding-top: 6em;
+    padding-bottom: 6em; }
   .band--DARK {
     background-color: #222A3B; }
+  .band--WARM {
+    background-color: #F97A66; }
 
 .card {
   -webkit-box-flex: 1;
@@ -401,7 +407,7 @@ body {
     margin-bottom: 2em; }
 
 .container {
-  padding: 0 2em 0 2em;
+  padding: 0 1em 0 1em;
   display: block;
   margin: 0 auto; }
   .container--section {
@@ -750,6 +756,9 @@ pre {
 
 sup {
   z-index: -1; }
+
+a {
+  color: #5F6C90; }
 
 @media screen and (max-width: 48em) {
   h1 {

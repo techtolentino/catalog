@@ -56,6 +56,10 @@ sup {
     z-index: -1;
 }
 
+a {
+    color: $dark-color;
+}
+
 
 @include media-query($medium-screen) {
     h1 {

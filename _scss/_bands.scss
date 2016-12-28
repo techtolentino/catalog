@@ -6,7 +6,16 @@
         padding-bottom: $spacing-unit * 2;
     }
 
+    &--LARGE {
+        padding-top: $spacing-unit * 3;
+        padding-bottom: $spacing-unit * 3;
+    }
+
     &--DARK {
         background-color: $text-color;
+    }
+
+    &--WARM {
+        background-color: $warm-color;
     }
 }

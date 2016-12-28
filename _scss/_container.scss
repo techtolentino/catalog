@@ -1,5 +1,7 @@
+$container-side-padding: $spacing-unit / 2;
+
 .container {
-    padding: 0 $spacing-unit 0 $spacing-unit;
+    padding: 0 $container-side-padding 0 $container-side-padding;
     display: block;
     margin: 0 auto;
 
