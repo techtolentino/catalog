@@ -2,6 +2,10 @@
     &--dark {
         background-color: $text-color;
     }
+
+    &--alt {
+        background-color: lighten($gray-color, 20%);
+    }
 }
 
 .text {

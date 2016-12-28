@@ -30,9 +30,7 @@ description: Search for internal, customized integrations or bots that can be in
             {% endfor %}
         </div>
     </div>
-</div>
 
-<div class="band">
     <div class="container container--section container--MEDIUM">
         <h3 class="text--COOL">Integrations</h3>
         <div class="card--row">

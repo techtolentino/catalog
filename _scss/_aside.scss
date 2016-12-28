@@ -1,0 +1,11 @@
+.aside {
+    display: flex;
+
+    &--column {
+        padding-right: $spacing-unit;
+    }
+
+    &--body {
+
+    }
+}

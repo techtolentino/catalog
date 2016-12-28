@@ -6,7 +6,11 @@ $container-side-padding: $spacing-unit / 2;
     margin: 0 auto;
 
     &--section {
-        border-bottom: 1px dotted $gray-color;
+        padding: $container-side-padding;
+
+        &:not(:last-child) {
+            border-bottom: 1px dotted $gray-color;
+        }
     }
 
     &--SMALL {

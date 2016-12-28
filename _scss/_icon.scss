@@ -9,4 +9,10 @@
         width: $spacing-unit * 2;
         vertical-align: middle;
     }
+
+    &--LARGE {
+        height: $spacing-unit * 3;
+        width: $spacing-unit * 3;
+        vertical-align: middle;
+    }
 }
