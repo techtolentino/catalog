@@ -2,7 +2,7 @@
     flex: 1;
     border: 1px solid $gray-color;
     padding: $spacing-unit / 2;
-    border-radius: 3px;
+    border-radius: $base-border-radius;
     margin: $spacing-unit / 4;
 
     &:first-child {

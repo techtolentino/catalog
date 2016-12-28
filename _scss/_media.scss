@@ -1,0 +1,7 @@
+.media {
+    display: flex;
+
+    &--img {
+        padding-right: $spacing-unit / 2;
+    }
+}

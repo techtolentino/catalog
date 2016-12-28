@@ -394,7 +394,7 @@ body {
           flex: 1;
   border: 1px solid #aeaeae;
   padding: 1em;
-  border-radius: 3px;
+  border-radius: 5px;
   margin: 0.5em; }
   .card:first-child {
     margin-left: 0; }
@@ -422,7 +422,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 3px;
+  border-radius: 5px;
   overflow: hidden; }
 
 .form--input {
@@ -461,6 +461,13 @@ body {
     height: 4em;
     width: 4em;
     vertical-align: middle; }
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .media--img {
+    padding-right: 1em; }
 
 .highlight {
   background: #fbfbfb;

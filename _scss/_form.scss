@@ -9,7 +9,7 @@
     &--search {
         border: 1px solid $gray-color;
         display: flex;
-        border-radius: 3px;
+        border-radius: $base-border-radius;
         overflow: hidden;
 
     }

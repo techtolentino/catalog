@@ -43,7 +43,13 @@ gulp.task('serve', ['sass', 'jekyll-build', 'svg-min'], function() {
 /* Minify all svg icons */
 gulp.task('svg-min', function(){
     return gulp.src('_assets/img/icons/*.*')
-        .pipe(svgmin())
+        .pipe(svgmin({
+            plugins: [{
+                removeDoctype: true
+            }, {
+                removeComments: true
+            }]
+        }))
         .pipe(gulp.dest('build/src/assets/img/icons'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('src/assets/img/icons'));
