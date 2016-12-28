@@ -1,0 +1,11 @@
+.icon {
+    height: $spacing-unit;
+    width: $spacing-unit;
+    vertical-align: middle;
+
+    &--MEDIUM {
+        height: $spacing-unit * 2;
+        width: $spacing-unit * 2;
+        vertical-align: middle;
+    }
+}

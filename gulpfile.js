@@ -3,6 +3,7 @@ var sass        = require('gulp-sass');
 var browserSync = require('browser-sync');
 var prefix 		= require('gulp-autoprefixer');
 var cp          = require('child_process');
+var svgmin      = require('gulp-svgmin');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -33,10 +34,19 @@ gulp.task('sass', function () {
 });
 
 /** Wait for jekyll-build, then launch the Server */
-gulp.task('serve', ['sass', 'jekyll-build'], function() {
+gulp.task('serve', ['sass', 'jekyll-build', 'svg-min'], function() {
     browserSync.init({
         server: "build/"
     });
+});
+
+/* Minify all svg icons */
+gulp.task('svg-min', function(){
+    return gulp.src('_assets/img/icons/*.*')
+        .pipe(svgmin())
+        .pipe(gulp.dest('build/src/assets/img/icons'))
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest('src/assets/img/icons'));
 });
 
 /** Watch all files for changes, except the build and other unneccessary folders */

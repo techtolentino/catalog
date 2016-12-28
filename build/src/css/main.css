@@ -452,6 +452,15 @@ body {
   border: none;
   color: #F5F5F6; }
 
+.icon {
+  height: 2em;
+  width: 2em;
+  vertical-align: middle; }
+  .icon--MEDIUM {
+    height: 4em;
+    width: 4em;
+    vertical-align: middle; }
+
 .highlight {
   background: #fbfbfb;
   margin: 0; }

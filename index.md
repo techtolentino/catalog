@@ -22,11 +22,10 @@ description: Search for internal, customized integrations or bots that can be in
         <div class="card--row">
             {% for collection in site.applications %}
                 {% if collection.type == 'bot' %}
-                    <div class="card">
-                        <a href="{{collection.url}}">
+                    <a href="{{collection.url}}" class="card">
+                            <img class="icon" src="/src/assets/img/icons/{{collection.icon}}" alt="">
                             {{collection.title}}
-                        </a>
-                    </div>
+                    </a>
                 {% endif %}
             {% endfor %}
         </div>
@@ -39,11 +38,10 @@ description: Search for internal, customized integrations or bots that can be in
         <div class="card--row">
             {% for collection in site.applications %}
                 {% if collection.type == 'integration' %}
-                    <div class="card">
-                        <a href="{{collection.url}}">
-                            {{collection.title}}
-                        </a>
-                    </div>
+                    <a href="{{collection.url}}" class="card">
+                        <img class="icon" src="/src/assets/img/icons/{{collection.icon}}" alt="">
+                        {{collection.title}}
+                    </a>
                 {% endif %}
             {% endfor %}
         </div>
