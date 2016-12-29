@@ -3,9 +3,13 @@
 
     &--column {
         padding-right: $spacing-unit;
+        width: $spacing-unit * 10;
     }
 
-    &--body {
-
+    &--tag {
+        background-color: darken($gray-color, 10%);
+        color: $background-color;
+        padding: .25em .5em;
+        border-radius: $base-border-radius;
     }
 }

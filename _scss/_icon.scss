@@ -4,6 +4,12 @@
     vertical-align: middle;
     padding-right: $spacing-unit / 4;
 
+    &--SMALL {
+        height: $spacing-unit / 2;
+        width: $spacing-unit / 2;
+        vertical-align: middle;
+    }
+
     &--MEDIUM {
         height: $spacing-unit * 2;
         width: $spacing-unit * 2;
@@ -11,8 +17,8 @@
     }
 
     &--LARGE {
-        height: $spacing-unit * 3;
-        width: $spacing-unit * 3;
+        height: auto;
+        width: 100%;
         vertical-align: middle;
     }
 }

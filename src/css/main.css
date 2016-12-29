@@ -380,7 +380,13 @@ body {
   display: -ms-flexbox;
   display: flex; }
   .aside--column {
-    padding-right: 2em; }
+    padding-right: 2em;
+    width: 20em; }
+  .aside--tag {
+    background-color: #959595;
+    color: #F5F5F6;
+    padding: .25em .5em;
+    border-radius: 5px; }
 
 .band {
   padding-top: 2em;
@@ -395,6 +401,17 @@ body {
     background-color: #222A3B; }
   .band--WARM {
     background-color: #F97A66; }
+
+.button {
+  display: block;
+  margin: 2em 0;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #aeaeae;
+  padding: 0.5em; }
+  .button:hover {
+    cursor: pointer;
+    border: 1px solid #02C3E2; }
 
 .card {
   -webkit-box-flex: 1;
@@ -467,13 +484,17 @@ body {
   width: 2em;
   vertical-align: middle;
   padding-right: 0.5em; }
+  .icon--SMALL {
+    height: 1em;
+    width: 1em;
+    vertical-align: middle; }
   .icon--MEDIUM {
     height: 4em;
     width: 4em;
     vertical-align: middle; }
   .icon--LARGE {
-    height: 6em;
-    width: 6em;
+    height: auto;
+    width: 100%;
     vertical-align: middle; }
 
 .highlight {
@@ -824,3 +845,10 @@ a {
 
 .text--GRAY {
   color: #aeaeae; }
+
+.text--META {
+  font-size: 0.875em;
+  color: #959595; }
+
+.text--SMALL {
+  font-size: 0.875em; }

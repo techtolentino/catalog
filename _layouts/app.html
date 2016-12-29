@@ -6,11 +6,20 @@ layout: default
         <div class="aside">
             <div class="aside--column">
                 <img class="icon icon--LARGE" src="/src/assets/img/icons/{{page.icon}}" alt="">
+                <div class="button">
+                    <img class="icon icon--SMALL" src="/src/assets/img/icons/slack.svg" alt="">
+                    <a class="button--link" href="{{page.install-link}}">Add to Slack</a>
+                </div>
+                <span class="aside--tag text--SMALL">{{page.category}}</span>
             </div>
             <div class="aside--body">
                 <h1>{{page.title}}</h1>
                 <h4>{{page.tagline}}</h4>
                 <p>{{page.description}}</p>
+                <p class="text--SMALL">
+                    Created by: {{page.author}}<br>
+                    Repository: <a href="{{page.repo}}">{{page.repo}}</a>
+                </p>
             </div>
         </div>
     </div>

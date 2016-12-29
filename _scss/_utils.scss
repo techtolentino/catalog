@@ -29,4 +29,13 @@
         color: $gray-color;
     }
 
+    &--META {
+        font-size: $small-font-size;
+        color: darken($gray-color, 10%);
+    }
+
+    &--SMALL {
+        font-size: $small-font-size;
+    }
+
 }
