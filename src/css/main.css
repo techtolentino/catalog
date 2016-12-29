@@ -852,3 +852,6 @@ a {
 
 .text--SMALL {
   font-size: 0.875em; }
+
+.text--RIGHT {
+  text-align: right; }

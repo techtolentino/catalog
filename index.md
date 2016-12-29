@@ -23,12 +23,15 @@ description: Search for internal, customized integrations or bots that can be in
             {% for collection in site.applications %}
                 {% if collection.type == 'bot' %}
                     <a href="{{collection.url}}" class="card">
-                            <img class="icon" src="/src/assets/img/icons/{{collection.icon}}" alt="">
-                            {{collection.title}}
+                        <img class="icon" src="/src/assets/img/icons/{{collection.icon}}" alt="">
+                        {{collection.title}}
                     </a>
                 {% endif %}
             {% endfor %}
         </div>
+        <p class="text--RIGHT">
+            <a href="#">See all bots</a>
+        </p>
     </div>
 
     <div class="container container--section container--MEDIUM">
@@ -43,5 +46,8 @@ description: Search for internal, customized integrations or bots that can be in
                 {% endif %}
             {% endfor %}
         </div>
+        <p class="text--RIGHT">
+            <a href="#">See all integrations</a>
+        </p>
     </div>
 </div>
