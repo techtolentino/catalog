@@ -30,7 +30,7 @@ description: Search for internal, customized integrations or bots that can be in
             {% endfor %}
         </div>
         <p class="text--RIGHT">
-            <a href="#">See all bots</a>
+            <a href="/bots.html">See all bots</a>
         </p>
     </div>
 
@@ -47,7 +47,7 @@ description: Search for internal, customized integrations or bots that can be in
             {% endfor %}
         </div>
         <p class="text--RIGHT">
-            <a href="#">See all integrations</a>
+            <a href="/integrations.html">See all integrations</a>
         </p>
     </div>
 </div>
